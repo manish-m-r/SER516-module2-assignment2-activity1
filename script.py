@@ -31,6 +31,6 @@ num = 26-s
 
 decrypt_word = sys.argv[2]
 
-result = encypt_func(encrypt_word, s)
+result = encypt_func(encrypt_word
 print(" The encrypted text is: "+result)
 print(" The decrypted text is: "+encypt_func(decrypt_word, num))
