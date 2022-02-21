@@ -17,6 +17,8 @@ def encypt_func(txt, s):
         # encypt_func lowercase characters in plain txt
         elif(char.islower()):
             result += chr((ord(char) + s - 97) % 26 + 97)
+        else:
+            result += char
 
     return result
 
