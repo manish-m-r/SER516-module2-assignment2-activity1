@@ -28,7 +28,7 @@ txt = "CEASER MAN is bad"
 s = 4
 num = 26-s
 
-encrypt_word = sys.argv[1]
+
 decrypt_word = sys.argv[2]
 
 result = encypt_func(encrypt_word, s)
