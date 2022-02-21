@@ -17,8 +17,6 @@ def encypt_func(txt, s):
         # encypt_func lowercase characters in plain txt
         elif(char.islower()):
             result += chr((ord(char) + s - 97) % 26 + 97)
-        else:
-            result += char
 
     return result
 
@@ -29,6 +27,8 @@ s = 4
 num = 26-s
 
 encrypt_word = sys.argv[1]
+decrypt_word = sys.argv[2]
 
 result = encypt_func(encrypt_word, s)
 print(" The encrypted text is: "+result)
+print(" The decrypted text is: "+encypt_func(decrypt_word, num))
